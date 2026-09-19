@@ -1,36 +1,40 @@
- 
-# 📄 Multimodal RAG for PDF Ingestion and Text-Image Output 
+# Multimodal RAG for PDF Ingestion and Text Image Output
 
 This project implements a **Multimodal Retrieval-Augmented Generation (RAG)** system that ingests PDF documents and generates outputs containing both **text** and **images** extracted or referenced from the PDFs.
 
-The code leverages two advanced frameworks for enhanced retrieval and embedding capabilities:
+The project leverages two frameworks for document processing, retrieval, and multimodal representation:
 
-* **LangChain**: Utilizes a specialized architecture for PDF processing, optimized for handling document structure and content.
-* **LlamaIndex**: Employs CLIP embeddings behind the scenes to enable powerful multimodal representation, especially for linking textual and visual content.
+* **LangChain**: Provides document processing and PDF ingestion capabilities, with support for structured document workflows and multimodal retrieval.
+* **LlamaIndex**: Uses CLIP-based embeddings to enable multimodal representation and improve connections between textual and visual content.
 
----
-
-## ✨ Features
+## Features
 
 * Ingests PDF files and processes both textual and visual content.
-* Generates outputs containing relevant **text and images** from the source.
-* Supports **multimodal querying** via Retrieval-Augmented Generation.
-* Modular design built on **LangChain** and **LlamaIndex**, allowing flexible embedding and retrieval strategies.
+* Generates outputs containing relevant **text and images** from the source documents.
+* Supports **multimodal querying** using Retrieval-Augmented Generation.
+* Provides modular implementations using **LangChain** and **LlamaIndex**.
+* Supports different embedding, retrieval, and generation strategies.
 
----
+## Working
 
-## ⚙️ Working
+### `main.ipynb`
 
-* **`main.ipynb`**: A complete and direct implementation of the **Multimodal RAG** pipeline using both text and image extraction logic. Use this notebook to quickly test the full workflow end-to-end.
+A complete implementation of the **Multimodal RAG** pipeline using text and image extraction logic.
 
-* **`tutorials/` folder**:
+The notebook can be used to test the complete workflow end-to-end.
 
-  * Contains two subfolders: `langchain/` and `llamaindex/`.
-  * Both subfolders showcase **independent implementations** of the same task using different frameworks and methodologies:
+### `tutorials/`
 
-    * `langchain/`: Demonstrates how to use LangChain for document ingestion and multimodal retrieval. Also includes examples of integrating **models like Mistral** for generation tasks.
-    * `llamaindex/`: Uses LlamaIndex's CLIP-based embeddings for connecting text and image content across the PDF.
+The `tutorials/` folder contains two independent implementations:
 
----
+* `langchain/`
 
-Let me know if you'd like to add installation instructions, model dependencies, or example outputs next.
+  * Demonstrates PDF ingestion and document processing using LangChain.
+  * Shows multimodal retrieval workflows.
+  * Includes examples of integrating models such as **Mistral** for generation.
+
+* `llamaindex/`
+
+  * Demonstrates multimodal retrieval using LlamaIndex.
+  * Uses **CLIP-based embeddings** to connect textual and visual content from PDFs.
+  * Provides an alternative implementation of the multimodal RAG workflow.
