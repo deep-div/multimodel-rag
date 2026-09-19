@@ -7,6 +7,8 @@ The project leverages two frameworks for document processing, retrieval, and mul
 * **LangChain**: Provides document processing and PDF ingestion capabilities, with support for structured document workflows and multimodal retrieval.
 * **LlamaIndex**: Uses CLIP-based embeddings to enable multimodal representation and improve connections between textual and visual content.
 
+<img width="1462" height="745" alt="Multimodel Rag" src="https://github.com/user-attachments/assets/e6c2f4f8-a1b4-48f9-b5b2-7516ed467a7d" />
+
 ## Features
 
 * Ingests PDF files and processes both textual and visual content.
